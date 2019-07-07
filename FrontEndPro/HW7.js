@@ -5,6 +5,6 @@ var d = 2;
 var e;
 
 
-alert( "" || null && b || d );
-alert( (undefined  ||  null) && b &&  d );
-alert( undefined  ||  null || b || undefined && d);
+alert( a || c && b || d);
+alert( e  ||  c && b && d);
+alert( e  ||  c || b || e && d);
