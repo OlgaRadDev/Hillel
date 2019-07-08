@@ -1,16 +1,20 @@
 //Цикл
-// function checkNumber(number) {
-//     if(number%2===0) {
-//         alert("YES");
-//     } else
-//         alert("NO");
-// }
-// do {
-//     var num = +prompt("Enter number: ");
-//     checkNumber(num);
-// } while (num>0);
 
-//Рекурсия
+var num = +prompt("Enter number: ");
+function checkNumber(number) {
+    for (var i = 0; number >1; i++) {
+        number /= 2;
+    }
+
+    if (number === 1)
+        return alert('YES');
+    else
+        return alert('NO');
+
+}
+    checkNumber(num);
+    
+// Рекурсия
 
 function checkNum(number) {
     if (number===1) {
@@ -19,7 +23,6 @@ function checkNum(number) {
         return 0;
     }else {
         return checkNum(number/2);
-        console.log(number)
     }
 }
 var number = +prompt("Enter number: ");
