@@ -16,6 +16,8 @@ function checkNumber(number) {
     
 // Рекурсия
 
+var number = +prompt("Enter number: ");
+
 function checkNum(number) {
     if (number===1) {
         return 1;
@@ -25,7 +27,7 @@ function checkNum(number) {
         return checkNum(number/2);
     }
 }
-var number = +prompt("Enter number: ");
+
 if (checkNum(number)===1) {
     alert('YES');
 } else {
