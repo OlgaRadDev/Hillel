@@ -5,24 +5,19 @@
     function doMath(first, sign, second) {
         switch (sign) {
             case '+':
-                var sum = first + second;
-                alert('Result: ' + sum);
+                alert('Result: ' + (first + second));
                 break;
             case '-':
-                var min = first - second;
-                alert('Result: ' + min);
+                alert('Result: ' + (first - second));
                 break;
             case '*':
-                var mult = first * second;
-                alert('Result: ' + mult);
+                alert('Result: ' + (first * second));
                 break;
             case '/':
-                var divide = first / second;
-                alert('Result: ' + divide);
+                alert('Result: ' + (first / second));
                 break;
             case '%':
-                var module = first % second;
-                alert('Result: ' + module);
+                alert('Result: ' + (first % second));
                 break;
             default:
                 alert('Wrong number');
