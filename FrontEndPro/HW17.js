@@ -10,52 +10,52 @@ var users = [
     {
         name: 'Alex',
         gender: 'male',
-        berthYear: '1985'
+        berthYear: 1985
     },
     {
         name: 'John',
         gender: 'male',
-        berthYear: '1980'
+        berthYear: 1980
     },
     {
         name: 'Max',
         gender: 'male',
-        berthYear: '1989'
+        berthYear: 1989
     },
     {
         name: 'Peter',
         gender: 'male',
-        berthYear: '1992'
+        berthYear: 1992
     },
     {
         name: 'Mike',
         gender: 'male',
-        berthYear: '1987'
+        berthYear: 1987
     },
     {
         name: 'Sam',
         gender: 'male',
-        berthYear: '1994'
+        berthYear: 1994
     },
     {
         name: 'Kate',
         gender: 'female',
-        berthYear: '1981'
+        berthYear: 1981
     },
     {
         name: 'Tina',
         gender: 'female',
-        berthYear: '1988'
+        berthYear: 1988
     },
     {
         name: 'Eva',
         gender: 'female',
-        berthYear: '1989'
+        berthYear: 1989
     },
     {
         name: 'Juliya',
         gender: 'female',
-        berthYear: '1987'
+        berthYear: 1987
     }
 ];
 
