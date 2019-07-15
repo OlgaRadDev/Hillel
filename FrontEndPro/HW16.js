@@ -5,24 +5,24 @@
 // массив [0,0,0,0,1,1,1,1,1,1,1,0,0,1,1,1,1] преобразуется в [4,7,2,4]
 // массив [0,0,1,1,1,1,0,1,1,1] преобразуется в [2,4,1,3]
 
-var firstArray = [0,0,0,0,1,1,1,1,1,1,1,0,0,1,1,1,1];
-var secondArray = [0,0,1,1,1,1,0,1,1,1];
+var firstArray = [0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1];
+var secondArray = [0, 0, 1, 1, 1, 1, 0, 1, 1, 1];
+
 //
 
 function compressArray(arr) {
     var compArray = [];
 
-    for (var i = 0; i<arr.length; i++){
+    for (var i = 0; i < arr.length; i++) {
         var currentNumber = arr[i];
-        var currentCount=1;
-        while(arr[i+1] === currentNumber) {
+        var currentCount = 1;
+        while (arr[i + 1] === currentNumber) {
             currentCount++;
             i++;
         }
-        compArray+=currentCount+' ';
+        compArray.push(currentCount);
     }
-
-       return '['+ compArray + ']';
+    return compArray;
 }
 
 console.log(compressArray(firstArray));
