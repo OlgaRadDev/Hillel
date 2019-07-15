@@ -22,34 +22,43 @@ for (var i = 0; i<newArray.length; i++) {
         countPositive++;
     }
 }
-console.log(sum);
-console.log(countPositive);
+console.log('Sum: '+sum+' Count positive elements: '+countPositive);
+// console.log(countPositive);
 
 // Найти минимальный элемент массива.
-var min = Math.min.apply(null, newArray);
-console.log(min);
-
-var lenArray = newArray.length;
-var minElm = Infinity;
-while (lenArray--) {
-    if (Number(newArray[lenArray])<minElm) {
-        minElm = Number(newArray[lenArray]);
-    }
-}
-console.log(minElm);
+// var min = Math.min.apply(null, newArray);
+// console.log(min);
+//
+// var lenArray = newArray.length;
+// var minElm = Infinity;
+// while (lenArray--) {
+//     if (Number(newArray[lenArray])<minElm) {
+//         minElm = Number(newArray[lenArray]);
+//     }
+// }
+// console.log(minElm);
+newArray.sort(function (a,b) {
+    return a-b;
+});
+console.log('Min element: '+newArray.shift());
 
 // Найти максимальный элемент массива.
-var max = Math.max.apply(null, newArray);
-console.log(max);
+// var max = Math.max.apply(null, newArray);
+// console.log(max);
+//
+// var lenArray = newArray.length;
+// var maxElm = -Infinity;
+// while (lenArray--) {
+//     if (Number(newArray[lenArray])>maxElm) {
+//         maxElm = Number(newArray[lenArray]);
+//     }
+// }
+// console.log(maxElm);
 
-var lenArray = newArray.length;
-var maxElm = -Infinity;
-while (lenArray--) {
-    if (Number(newArray[lenArray])>maxElm) {
-        maxElm = Number(newArray[lenArray]);
-    }
-}
-console.log(maxElm);
+newArray.sort(function (a,b) {
+    return a-b;
+});
+console.log('Max element: '+newArray.pop());
 
 // Определить количество отрицательных элементов.
 var countNegative = 0;
@@ -59,7 +68,7 @@ for (var i = 0; i<newArray.length; i++) {
         countNegative++;
     }
 }
-console.log(countNegative);
+console.log('Count of negative elements: '+countNegative);
 
 // Найти количество нечетных положительных элементов.
 var countOddPositive = 0;
@@ -69,7 +78,7 @@ for (var i = 0; i<newArray.length; i++) {
         countOddPositive++;
     }
 }
-console.log(countOddPositive);
+console.log('Count of odd positive elements: '+countOddPositive);
 
 //     Найти количество четных положительных элементов.
 var countEvenPositive = 0;
@@ -79,7 +88,7 @@ for (var i = 0; i<newArray.length; i++) {
         countEvenPositive++;
     }
 }
-console.log(countEvenPositive);
+console.log('Count of even positive elements: '+countEvenPositive);
 
 //     Найти сумму четных положительных элементов.
 var sumEvenPositive = 0;
@@ -89,7 +98,7 @@ for (var i = 0; i<newArray.length; i++) {
         sumEvenPositive += newArray[i];
     }
 }
-console.log(sumEvenPositive);
+console.log('Sum of Even positive elements: '+sumEvenPositive);
 
 //     Найти сумму нечетных положительных элементов.
 var sumOddPositive = 0;
@@ -99,7 +108,7 @@ for (var i = 0; i<newArray.length; i++) {
         sumOddPositive += newArray[i];
     }
 }
-console.log(sumOddPositive);
+console.log('Sum of Odd positive elements: '+sumOddPositive);
 
 //     Найти определить количество элементов, равных 4.
 var countSpecificNumber = 0;
@@ -109,4 +118,4 @@ for (var i = 0; i<newArray.length; i++) {
         countSpecificNumber++;
     }
 }
-console.log(countSpecificNumber);
+console.log('Count of elements = 4: '+countSpecificNumber);
