@@ -52,8 +52,7 @@ function manageStudents(students) {
         averageMarkStudent: function () {
             
         },
-        averageMarkGr
-        oupForLesson:function () {
+        averageMarkGroupForLesson:function () {
             
         },
         sortListByNameStudents: function () {
