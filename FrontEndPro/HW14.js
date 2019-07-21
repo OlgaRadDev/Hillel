@@ -23,42 +23,6 @@ for (var i = 0; i<newArray.length; i++) {
     }
 }
 console.log('Sum: '+sum+' Count positive elements: '+countPositive);
-// console.log(countPositive);
-
-// Найти минимальный элемент массива.
-// var min = Math.min.apply(null, newArray);
-// console.log(min);
-//
-// var lenArray = newArray.length;
-// var minElm = Infinity;
-// while (lenArray--) {
-//     if (Number(newArray[lenArray])<minElm) {
-//         minElm = Number(newArray[lenArray]);
-//     }
-// }
-// console.log(minElm);
-newArray.sort(function (a,b) {
-    return a-b;
-});
-console.log('Min element: '+newArray.shift());
-
-// Найти максимальный элемент массива.
-// var max = Math.max.apply(null, newArray);
-// console.log(max);
-//
-// var lenArray = newArray.length;
-// var maxElm = -Infinity;
-// while (lenArray--) {
-//     if (Number(newArray[lenArray])>maxElm) {
-//         maxElm = Number(newArray[lenArray]);
-//     }
-// }
-// console.log(maxElm);
-
-newArray.sort(function (a,b) {
-    return a-b;
-});
-console.log('Max element: '+newArray.pop());
 
 // Определить количество отрицательных элементов.
 var countNegative = 0;
@@ -119,3 +83,38 @@ for (var i = 0; i<newArray.length; i++) {
     }
 }
 console.log('Count of elements = 4: '+countSpecificNumber);
+
+// Найти минимальный элемент массива.
+// var min = Math.min.apply(null, newArray);
+// console.log(min);
+//
+// var lenArray = newArray.length;
+// var minElm = Infinity;
+// while (lenArray--) {
+//     if (Number(newArray[lenArray])<minElm) {
+//         minElm = Number(newArray[lenArray]);
+//     }
+// }
+// console.log(minElm);
+var min = newArray.sort(function (a,b) {
+    return a-b;
+});
+console.log('Min element: '+min.shift());
+
+// Найти максимальный элемент массива.
+// var max = Math.max.apply(null, newArray);
+// console.log(max);
+//
+// var lenArray = newArray.length;
+// var maxElm = -Infinity;
+// while (lenArray--) {
+//     if (Number(newArray[lenArray])>maxElm) {
+//         maxElm = Number(newArray[lenArray]);
+//     }
+// }
+// console.log(maxElm);
+//
+var max = newArray.sort(function (a,b) {
+    return a-b;
+});
+console.log('Max element: '+max.pop());
