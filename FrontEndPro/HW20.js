@@ -10,17 +10,17 @@
 
 //
 var elements = document.getElementsByTagName('div');
-var countOdd = 0;
-var countEven = 0;
-for (var i = 0; i < elements.length; i++) {
+// var countOdd = 0;
+// var countEven = 0;
+for (var i = 0; i <= elements.length; i++) {
 
     if (i % 2 !== 0) {
-        countOdd++;
-        elements[i].innerText = 'Я нечетный элемент № ' + countOdd;
+        // countOdd++;
+        elements[i].innerText = 'Я нечетный элемент № ' + ((i+1)/2).toFixed();
     }
     else {
-        countEven++;
-        elements[i].innerText = 'Я четный элемент № ' + countEven;
+        // countEven++;
+        elements[i].innerText = 'Я четный элемент № ' + ((i+1)/2).toFixed();
     }
 
 }
