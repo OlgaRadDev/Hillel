@@ -5,29 +5,50 @@
 //то выделение с прошлого — снимается, и ставится на тот по котором кликнули
 
 
-var elements = document.querySelectorAll(".box");
+// var elements = document.querySelectorAll(".box");
+//
+// for (var i = 0; i < elements.length; i++) {
+//     console.log(elements[i]);
+//     elements[i].addEventListener("click", function () {
+//         changeColor(elements, this)
+//     });
+// }
+//
+// function changeColor(boxes, box) {
+//
+//     for (var i = 0; i < elements.length; i++) {
+//         elements[i].style.backgroundColor = '#215d0b';
+//     }
+//
+//     if (box.style.backgroundColor = '#215d0b') {
+//         box.style.backgroundColor = 'red';
+//
+//     } else {
+//         box.style.backgroundColor = '#215d0b';
+//     }
+//
+// }
 
-for (var i = 0; i < elements.length; i++) {
-    console.log(elements[i]);
-    elements[i].addEventListener("click", function () {
-        changeColor(elements, this)
-    });
-}
 
-function changeColor(boxes, box) {
+var container = document.getElementById('container');
+var selectedSquare;
 
-    for (var i = 0; i < elements.length; i++) {
-        elements[i].style.backgroundColor = '#215d0b';
+container.onclick = function (event) {
+    var target = event.target;
+
+    if (target.className !== 'box') return;
+    changeColorSquare(target);
+};
+
+function changeColorSquare(square) {
+    if (selectedSquare) {
+        selectedSquare.classList.remove('changeColorSquare')
     }
 
-    if (box.style.backgroundColor = '#215d0b') {
-        box.style.backgroundColor = 'red';
+    selectedSquare = square;
+    selectedSquare.classList.add('changeColorSquare');
+};
 
-    } else {
-        box.style.backgroundColor = '#215d0b';
-    }
-
-}
 
 
 
